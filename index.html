@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's Club</title>
+
+    <!-- daisy ui doc -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font awesome icons -->
+<script src="https://kit.fontawesome.com/183d480756.js" crossorigin="anonymous"></script>
+
+<!-- manrope with google font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+<!-- tailwind styles -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockey-primary': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- simple styles -->
+<style>
+    .font-manrope{
+        font-family: "Manrope", sans-serif;
+    }
+</style>
+</head>
+<body class="font-manrope">
+
+    <!-- this is header section -->
+    <header class="">
+      <!-- class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-36 -->
+
+        <!-- nav ber -->
+        <nav>
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a> <span class="text-[#FF4240] font-bold">Home</span></a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost lg:text-4xl text-[#131318] font-extrabold">Hockey<span class="text-[#FF4240] font-extrabold text-4xl">’</span>s</a>
+            </div>
+            <div class="-ml-[280px] hidden lg:flex">
+              <ul class="menu text-base menu-horizontal px-1">
+                <li><a> <span class="text-[#FF4240] font-bold">Home</span></a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="lg:ml-[230px] ml-[70px]">
+              <a class="btn bg-hockey-primary text-[#FFF] lg:font-bold">Get Ticket</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- carousel hockey's -->
+        <div class=" relative carousel mt-14">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-auto lg:w[1170px] lg:h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div class="bg-[#131318] rounded-2xl border-solid p-8 absolute gap-4 mt-[353px] ml-[572px] w-[502px]">
+                <h3 class="text-xl font-extrabold text-[#FFFFFF]">Meet all the heroes from the field</h3>
+                <p class="tex-[16px] text-[#FFFFFF]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+          </div>
+         
+    </header>
+    <!-- this is header section close -->
+
+    <!-- this is main section -->
+    <main>
+      <!-- hockeys club -->
+      <section class="">
+        <div class="mt-32">
+          <h3 class="text-center text-4xl font-extrabold text-[#131318]">Program Sections</h3>
+          <p class="text-center mt-5 text-[#131318] font-medium text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-20 gap-20 lg:gap-6">
+            <div class="card w-[224px] h-[335px] lg:w-96 bg-base-100 shadow-xl image-full">
+              <figure class="lg:h-[338px] lg:w-[573px]"><img src="Images/2.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title pt-24 font-extrabold text-[#FFF] text-[28px]">Junior Program</h2>
+                <p class="font-medium w-64 lg:w-[495px] text-base text-[#FFF]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                <div class="rounded-none">
+                  <button class="btn bg-hockey-primary text-[#FFF]">Register Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-[224px] h-[335px] lg:w-96 lg:-ml-[110px] bg-base-100 shadow-xl image-full">
+              <figure class="lg:h-[338px] lg:w-[573px]"><img src="Images/3.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title pt-24 font-extrabold text-[#FFF] text-[28px]">Teenager Program</h2>
+                <p class="font-medium w-64 lg:w-[495px] text-base text-[#FFF]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                <div class="rounded-none">
+                  <button class="btn bg-hockey-primary text-[#FFF]">Register Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-[224px] h-[335px] lg:w-96 bg-base-100 shadow-xl image-full">
+              <figure class="lg:h-[450px] lg:w-[1170px]"><img src="Images/4.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title pt-[207px] font-extrabold text-[#FFF] text-[28px]">Professional Program</h2>
+                <p class="font-medium w-64 lg:w-[520px] text-base text-[#FFF]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                <div class="rounded-none">
+                  <button class="btn bg-hockey-primary text-[#FFF]">Register Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+</body>
+</html>
